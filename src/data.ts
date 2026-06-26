@@ -1,0 +1,363 @@
+import {
+  PersonalInfo,
+  SkillCategory,
+  Experience,
+  ProjectDetail,
+  Education,
+  Certification,
+  ExcellenceItem,
+} from "./types";
+
+export const personalInfo: PersonalInfo = {
+  name: "Julius-Attah Justice Chukwulaka",
+  nickname: "Bankai",
+  title: "Full-Stack & DevOps Engineer",
+  email: "justicejuliuss1@gmail.com",
+  phone: "+2348115790233",
+  linkedin: "https://ng.linkedin.com/in/justice-julius-attah-7137b2311",
+  github: "https://github.com/BankaiTheOriginal",
+  summary:
+    "Results-driven Full-Stack Developer and DevOps Engineer with expertise in building and deploying production-grade applications. Specialized in complete infrastructure setup (Ubuntu VPS, Nginx, PM2, SSL/TLS), secure database migrations (Neon → PostgreSQL), and implementing enterprise-level security (RBAC, encryption, audit logging). Proven track record delivering 3 production systems with 99.9% uptime, 60%+ performance improvements through Redis caching, and 40-60% API optimization. Experienced in third-party integrations (OAuth 2.0, Zoho Books), automated CI/CD pipelines (GitHub Actions), and comprehensive testing (Jest, 85%+ coverage).",
+  languages: ["English — Fluent"],
+};
+
+export const skillsData: SkillCategory[] = [
+  {
+    name: "Frontend",
+    skills: [
+      "Next.js 14",
+      "React 18",
+      "TypeScript",
+      "React Router",
+      "Zustand",
+      "Tailwind CSS",
+    ],
+  },
+  {
+    name: "Backend & APIs",
+    skills: [
+      "NestJS",
+      "Node.js",
+      "REST API",
+      "GraphQL",
+      "Prisma ORM",
+      "JWT Auth",
+    ],
+  },
+  {
+    name: "Database & Caching",
+    skills: [
+      "PostgreSQL",
+      "Redis",
+      "Data Migration",
+      "Query Optimization",
+      "Connection Pooling",
+    ],
+  },
+  {
+    name: "DevOps & Infrastructure",
+    skills: [
+      "Ubuntu Server",
+      "PM2",
+      "Nginx",
+      "SSL/TLS",
+      "Certbot",
+      "DNS Config",
+      "SSH Keys",
+    ],
+  },
+  {
+    name: "CI/CD & Version Control",
+    skills: ["GitHub Actions", "Git", "SSH Auth", "Automated Deployments"],
+  },
+  {
+    name: "Security & Testing",
+    skills: [
+      "RBAC",
+      "Encryption",
+      "OAuth 2.0",
+      "Jest",
+      "Unit Testing",
+      "Integration Testing",
+    ],
+  },
+  {
+    name: "Integrations",
+    skills: ["Zoho Books", "OAuth 2.0", "API Integration"],
+  },
+];
+
+export const experienceData: Experience[] = [
+  {
+    role: "Backend Developer",
+    company: "Dobble Incorporated",
+    location: "Lagos, Nigeria",
+    period: "Nov 2025 – Jun 2026",
+    bullets: [
+      "Designed secure authentication and authorization flows using JWT tokens, MFA support, and role-based access control.",
+      "Exposed GraphQL and REST APIs, documented endpoints with Swagger, and supported local deployment with Docker.",
+      "Implemented OTP-based onboarding using Redis for expiry handling, enhancing security and streamlining organizational setup.",
+      "Integrated invitation-based onboarding with secure token generation, enabling bulk CSV support and automated email notifications.",
+      "Built core business modules for user management, budgets, policies, procurement, notifications, and wallet management.",
+      "Developed policy evaluation engine enforcing approval rules for procurement and reimbursement, reducing processing time.",
+      "Implemented multi-level approval workflows with dynamic approver resolution based on organizational hierarchy.",
+      "Created budgeting features at organizational and departmental levels with spending limit validation logic.",
+    ],
+  },
+  {
+    role: "Full Stack Software Developer",
+    company: "Excellium Consulting",
+    location: "Lagos, Nigeria",
+    period: "Jun 2025 – Jun 2026",
+    bullets: [
+      "Created scripts and APIs connecting Sage Pastel 50C with Zoho Books, enhancing system interoperability.",
+      "Developed backend integrations, streamlining user input processes by 90%.",
+      "Implemented updates immediately based on user feedback to enhance functionality.",
+      "Ensured compliance with security protocols and network regulations, safeguarding data integrity.",
+      "Followed efficiency protocols to optimize API time complexity.",
+      "Collaborated with cross-functional teams and maintained comprehensive technical documentation.",
+    ],
+  },
+  {
+    role: "IT Intern",
+    company: "NIIT",
+    location: "Port-Harcourt, Nigeria",
+    period: "Feb 2023 – Aug 2023",
+    bullets: [
+      "Created and managed an online examination platform for IT students.",
+      "Managed authentication process for smooth commencement and accurate submission of examination results.",
+      "Set up routers and servers, boosting network inter-connectivity between staff and students.",
+      "Conducted regular system diagnostics, security, and firewall updates to maintain campus safety.",
+    ],
+  },
+];
+
+export const projectsData: ProjectDetail[] = [
+  {
+    title: "TPPC Manufacturing Application",
+    status: "Company Property",
+    link: "https://tppc.exxforce.com/login",
+    tech: [
+      "Next.js 14",
+      "React 18",
+      "TypeScript",
+      "NestJS",
+      "PostgreSQL",
+      "Redis",
+      "PM2",
+      "Nginx",
+      "GitHub Actions",
+      "Certbot",
+    ],
+    description: [
+      "**Frontend Architecture**: Built Next.js 14 with React 18 and TypeScript for manufacturing dashboard; implemented Zustand state management, React Router navigation, and Tailwind CSS responsive design for inventory and operations tracking.",
+      "**Backend Development**: Developed NestJS REST APIs with TypeScript; integrated Redis caching layer (60%+ performance improvement); implemented Zoho Books OAuth 2.0 for real-time sales order synchronization; used Prisma ORM with PostgreSQL.",
+      "**Testing & Quality**: Achieved 85%+ code coverage with Jest; implemented unit and integration tests ensuring reliability across all critical business logic.",
+      "**Ubuntu VPS Setup**: Configured Ubuntu 22.04 LTS VPS from scratch with hardened security practices; deployed using PM2 for process management; set up Nginx reverse proxy with load balancing capabilities.",
+      "**SSL/TLS & DNS**: Implemented SSL/TLS encryption using Certbot with automated certificate renewal; configured DNS records and domain management for production access.",
+      "**Database Migration**: Migrated PostgreSQL database from Neon cloud to self-hosted Ubuntu VPS with zero downtime; optimized queries achieving 40-60% faster API responses; set up automated backup and recovery procedures.",
+      "**Security Implementation**: Established role-based access control (6 distinct roles); implemented JWT authentication with secure token refresh; configured data encryption at rest and in transit; set up SSH keys for GitHub CI/CD integration.",
+      "**CI/CD Pipeline**: Automated deployments using GitHub Actions with SSH key authentication; achieved 70% faster deployment times; configured environment-based secrets management.",
+    ],
+  },
+  {
+    title: "Excellium Connector",
+    status: "Company Property",
+    link: "https://connect.exxforce.com",
+    tech: [
+      "NestJS",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Zoho Books",
+      "Redis",
+      "Nginx",
+      "PM2",
+      "GitHub Actions",
+    ],
+    description: [
+      "**Full-Stack Development**: Developed Next.js frontend with React, TypeScript, and Tailwind CSS; implemented Zustand for state management; built NestJS REST APIs with comprehensive error handling; used PostgreSQL with Prisma ORM.",
+      "**Infrastructure Setup**: Set up Ubuntu VPS with identical production standards as TPPC Manufacturing; deployed using PM2 process management; configured Nginx reverse proxy with load balancing.",
+      "**Security & Encryption**: Implemented SSL/TLS with Certbot; configured DNS settings; established identical RBAC patterns from TPPC Manufacturing; encrypted sensitive data with secure environment variables.",
+      "**Database Management**: Performed seamless PostgreSQL migration from Neon to Ubuntu VPS; implemented database optimization and indexing strategies; set up automated backup procedures.",
+      "**Caching & Performance**: Integrated Redis caching layer; implemented connection pooling for optimal database performance.",
+      "**GitHub CI/CD**: Set up SSH key authentication for automated deployments; configured environment-based configuration management.",
+    ],
+  },
+  {
+    title: "Dobble Backend Application",
+    status: "Company Property",
+    link: "https://github.com/BankaiTheOriginal/Ogba-Backend",
+
+    tech: [
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Redis",
+      "PM2",
+      "Nginx",
+      "GitHub Actions",
+      "Jest",
+    ],
+    description: [
+      "**Backend Architecture**: Architected scalable NestJS REST APIs with modular design patterns; implemented authentication and authorization layers; designed data models using Prisma ORM with PostgreSQL.",
+      "**Caching & Sessions**: Integrated Redis for session management and caching; implemented connection pooling for performance optimization.",
+      "**Testing**: Created comprehensive Jest test suites with unit and integration tests; maintained high code quality standards.",
+      "**Ubuntu VPS Configuration**: Set up Ubuntu 22.04 LTS VPS with hardened security practices; deployed using PM2 with clustering and auto-restart functionality; configured Nginx for request routing and reverse proxy.",
+      "**SSL/TLS & Security**: Implemented SSL/TLS encryption with Certbot; configured DNS management; set up SSH key authentication for GitHub CI/CD integration; established firewall rules.",
+      "**Database Management**: Configured PostgreSQL on Ubuntu VPS; migrated data from Neon to self-hosted PostgreSQL seamlessly; optimized queries for performance; set up automated backup and recovery mechanisms.",
+      "**Enterprise Security**: Implemented role-based access control; configured JWT authentication; secured environment variables; set up data encryption and monitoring systems.",
+    ],
+  },
+  {
+    title: "Bankai Verse",
+    status: "Public",
+    link: "https://bankai-verse-frontend.vercel.app/",
+    tech: [
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Redis",
+      "Railway",
+      "GitHub Actions",
+      "Jest",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+    ],
+    description: [
+      "**Backend Architecture**: Built scalable NestJS REST APIs with modular design patterns; implemented JWT authentication with Argon2 password hashing; role-based access control (USER, PRINCESS, ADMIN roles); integrated TMDB API for movie/TV data fetching.",
+      "**Frontend Development**: Developed Next.js 16 frontend with React 19 and TypeScript; implemented responsive UI with Tailwind CSS; integrated carousel components and dynamic media display; protected routes for authenticated features.",
+      "**Database & ORM**: Designed PostgreSQL schema with Prisma ORM; implemented user management, favorites, watchlists, and princess picks models with proper relations and constraints.",
+      "**Caching Layer**: Integrated Redis for cache management using Keyv-Redis store; implemented cache manager with timeout handling and fallback to in-memory caching.",
+      "**External API Integration**: Integrated TMDB (The Movie Database) API for comprehensive movie/TV series data; implemented endpoints for search, popular content, trailers, images, and similar media.",
+      "**User Features**: Implemented favorites management (add/remove/clear); watchlist functionality; princess picks exclusive for PRINCESS/ADMIN roles; user profile updates and role management.",
+      "**Testing**: Configured Jest testing framework with unit and integration test capabilities; validation pipes for request validation; comprehensive error handling.",
+      "**Security**: Implemented JWT-based authentication with access and refresh tokens; Argon2 for secure password hashing; role-based guards for route protection; CORS configuration with origin validation.",
+      "**DevOps Ready**: Environment-based configuration with ConfigModule; scalable modular architecture ready for deployment on Railway or any cloud platform.",
+    ],
+  },
+  {
+    title: "Ogba",
+    status: "Public",
+    link: "https://ogba-frontend-d4dy.vercel.app/",
+    tech: [
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Zustand",
+      "Zod",
+      "React Hook Form",
+      "TanStack Query",
+      "OpenRouter AI",
+      "Cloudflare R2",
+      "PDF Parse",
+      "Mammoth",
+      "JWT",
+      "Cookie Parser",
+      "EventEmitter",
+      "Throttler",
+    ],
+    description: [
+      "**Backend Architecture**: Built scalable NestJS REST APIs with modular design patterns; implemented JWT-based authentication with Argon2 password hashing; integrated cookie-based session management for secure auth flows; configured rate limiting with Throttler guard.",
+      "**AI Integration**: Integrated OpenRouter SDK for AI-powered features; implemented resume feedback analysis, cover letter generation, and interview question preparation; used event-driven architecture for business logic.",
+      "**Database & ORM**: Designed PostgreSQL schema with Prisma ORM covering users, applications, documents, interviews, and notifications; implemented document versioning and history tracking.",
+      "**Document Management**: Built document storage with Cloudflare R2 (S3-compatible); implemented PDF and DOCX text extraction using pdf-parse and mammoth libraries; created document upload, versioning, and set-as-default functionality.",
+      "**Job Application Tracking**: Full CRUD for job applications with status management (SAVED, APPLIED, SCREENING, INTERVIEW, OFFER, REJECTED, WITHDRAWN); priority levels (LOW, MEDIUM, HIGH); search and filtering capabilities; CSV export functionality.",
+      "**Interview Management**: Comprehensive interview scheduling with calendar view; multiple interview formats (VIDEO, PHONE, ONSITE, ASYNC); outcome recording and notes management; interview reminders via event emitter.",
+      "**Frontend Architecture**: Developed Next.js 16 frontend with React 19 and TypeScript; implemented global state management with Zustand; form validation with Zod and React Hook Form; data fetching with TanStack Query.",
+      "**User Features**: Profile management with avatar support; password change functionality; account deletion; document upload and management for resumes/cover letters.",
+      "**Notifications**: Event-driven notification system for application status changes; automated interview reminders and status updates.",
+      "**Security**: JWT authentication with refresh token rotation; Argon2 for secure password hashing; CORS configuration for cross-origin requests; global exception filters; input validation with class-validator.",
+    ],
+  },
+];
+
+export const excellenceData: ExcellenceItem[] = [
+  {
+    title: "Infrastructure & Deployment Excellence",
+    bullets: [
+      "Successfully deployed 3 production applications on Ubuntu VPS achieving 99.9% uptime.",
+      "Configured Nginx infrastructure handling 1000+ concurrent connections.",
+      "Implemented automated GitHub Actions CI/CD pipelines for seamless deployments.",
+      "Established SSL/TLS encryption across all applications ensuring secure data transmission.",
+      "Achieved 70% faster deployment times through CI/CD optimization.",
+    ],
+  },
+  {
+    title: "Database & Performance Optimization",
+    bullets: [
+      "Successfully migrated 3 applications from Neon cloud to self-hosted PostgreSQL with zero downtime.",
+      "Achieved 40-60% reduction in API response times through query optimization and indexing.",
+      "Implemented Redis caching strategies achieving 60%+ performance improvement.",
+      "Designed automated backup and recovery procedures ensuring 100% data integrity.",
+      "Established database replication and failover mechanisms for high availability.",
+    ],
+  },
+  {
+    title: "Security & Compliance Implementation",
+    bullets: [
+      "Implemented airtight security measures across all 3 production applications.",
+      "Established role-based access control (RBAC) with 6 distinct user roles and granular permissions.",
+      "Configured end-to-end encryption for sensitive data (at rest and in transit).",
+      "Set up comprehensive audit logging and security event monitoring for compliance.",
+      "Implemented JWT authentication with secure token refresh and expiration mechanisms.",
+      "Configured secure SSH key management for GitHub CI/CD integration.",
+    ],
+  },
+  {
+    title: "Third-Party Integrations & Testing",
+    bullets: [
+      "Successfully implemented OAuth 2.0 integration with Zoho Books API for automated order synchronization.",
+      "Automated sales order data sync reducing manual data entry by 100%.",
+      "Achieved 85%+ code coverage across all applications using Jest framework.",
+      "Implemented comprehensive unit and integration tests for critical business logic.",
+    ],
+  },
+];
+
+export const educationData: Education[] = [
+  {
+    degree: "B.Sc. Computer Science",
+    institution: "Babcock University, Ilishan-Remo",
+    period: "Jul 2024",
+    detail: "CGPA: 4.10 — Second Class Upper",
+  },
+  {
+    degree: "Web Development Training",
+    institution: "New Horizons / Babcock University",
+    period: "Dec 2023",
+    detail: "Comprehensive program focused on advanced full-stack systems.",
+  },
+  {
+    degree: "High School (WAEC & NECO)",
+    institution: "Deeper Life High School, Calabar",
+    period: "Jul 2019",
+    detail: "Distinctions in Computer Science & Data Processing",
+  },
+];
+
+export const certificationsData: Certification[] = [
+  {
+    title: "NIIT — Web Development",
+    provider: "NIIT",
+    period: "Jan 2023 – Aug 2024",
+  },
+  {
+    title: "Full-Stack Development",
+    provider: "Practical Implementation",
+    period: "Jan 2023 – Present",
+  },
+  {
+    title: "DevOps & Infrastructure",
+    provider: "Production Experience",
+    period: "Jan 2023 – Present",
+  },
+];
