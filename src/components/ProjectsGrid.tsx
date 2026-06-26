@@ -61,7 +61,6 @@ export default function ProjectsGrid() {
 
       <div className="grid grid-cols-1 gap-10">
         {projectsData.map((project, pIndex) => {
-          // Process bullets into structured label-detail pairs
           const modules = project.description.map((bullet) => {
             const separatorIndex = bullet.indexOf(":");
             if (separatorIndex === -1) {

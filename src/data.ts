@@ -186,7 +186,7 @@ export const projectsData: ProjectDetail[] = [
     ],
   },
   {
-    title: "Dobble Backend Application",
+    title: "Dobble Application",
     status: "Company Property",
     link: "https://github.com/BankaiTheOriginal/Ogba-Backend",
 
