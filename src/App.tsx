@@ -31,7 +31,7 @@ import { personalInfo } from "./data";
 export default function App() {
   const [activeSection, setActiveSection] = useState("overview");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const date = new Date();
   // Section items for Navigation - Matching the structural sections
   const navItems = [
     { id: "overview", label: "OVERVIEW", icon: Cpu },
@@ -271,7 +271,9 @@ export default function App() {
               <div className="flex items-center gap-4 text-[#CCFF00] font-mono text-xs tracking-[0.2em] uppercase">
                 <span>Based in Lagos, Nigeria</span>
                 <span className="h-[1px] w-12 bg-zinc-800"></span>
-                <span>Active 2026</span>
+                <span>
+                  Active <span>{date.getFullYear()}</span>
+                </span>
               </div>
 
               <div className="space-y-3">
