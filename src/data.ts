@@ -281,7 +281,7 @@ export const projectsData: ProjectDetail[] = [
   {
     title: "TapTech Mobile",
     status: "Public",
-    link: "https://github.com/BankaiTheOriginal/TapTech-Mobile",
+    link: "https://taptech-mobile-landing.vercel.app",
     tech: [
       "React Native",
       "Expo",
